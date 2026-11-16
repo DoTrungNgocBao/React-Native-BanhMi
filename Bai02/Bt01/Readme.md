@@ -43,23 +43,34 @@
 - `padding`: Tạo khoảng cách.
 - `flexDirection`: Sắp xếp các thành phần.
 
-## 8. Hình ảnh minh chứng
+## 8. HÌNH ẢNH MINH CHỨNG
 
-### Trang chủ
-![Trang chủ](IMAGES/1-TrangChu.png)
+### 8.1. Trang chủ
+![Trang chủ](../../IMAGES/1-TrangChu.png)
 
-### Tìm kiếm
-![Tìm kiếm](IMAGES/2-TimKiem.png)
+### 8.2. Tìm kiếm
+![Tìm kiếm](../../IMAGES/2-TimKiem.png)
 
-### Giỏ hàng
-![Giỏ hàng](IMAGES/3-GioHang.png)
+### 8.3. Giỏ hàng
+![Giỏ hàng](../../IMAGES/3-GioHang.png)
 
-### Cấu trúc component
-![Components](IMAGES/4-Components.png)
+### 8.4. Code App.js
+![App.js](../../IMAGES/app.js.jpg)
 
-### Mã nguồn React Native
-![Code](IMAGES/5-Code.png)
+### 8.5. Code Header.js
+![Header.js](../../IMAGES/Header.js.jpg)
 
+### 8.6. Code Home.js
+![Home.js](../../IMAGES/Home.js.jpg)
+
+### 8.7. Code ProductCard.js
+![ProductCard.js](../../IMAGES/ProducCard.js.jpg)
+
+### 8.8. Code ProductList.js
+![ProductList.js](../../IMAGES/ProductList.js.jpg)
+
+### 8.9. Code Footer.js
+![Footer.js](../../IMAGES/Footer.js.jpg)
 ## 9. Kết quả
 Ứng dụng được xây dựng bằng React Native trên Expo Snack, sử dụng các component riêng biệt và hỗ trợ các chức năng bán hàng mô phỏng.
 
