@@ -1,0 +1,258 @@
+# BÀI 02 – BT01: THIẾT KẾ GIAO DIỆN ỨNG DỤNG BÁN BÁNH MÌ
+
+## 1. THÔNG TIN SINH VIÊN
+
+- **Họ và tên:** Đỗ Trung Ngọc Bảo
+- **Mã sinh viên:** CD-CNTT18A05
+- **Lớp:** CD-CNTT18A
+- **Ngành:** Công nghệ thông tin
+- **Môn học:** React Native
+- **Bài thực hành:** Bài 02 – BT01
+- **Tên ứng dụng:** MyApp_V2_BanhMiNgocBao
+
+## 2. LINK ỨNG DỤNG EXPO SNACK
+
+**Link ứng dụng:**
+
+https://snack.expo.dev/@dotrungngocbao/myapp_v2_banhmingocbao
+
+Ứng dụng được xây dựng và chạy trực tiếp trên Expo Snack bằng React Native.
+
+## 3. GIỚI THIỆU ỨNG DỤNG
+
+**BÁNH MÌ NGỌC BẢO** là ứng dụng mô phỏng cửa hàng bán bánh mì trực tuyến.
+
+Ứng dụng được thiết kế với giao diện hiện đại, màu sắc nổi bật, giúp người dùng dễ dàng xem danh sách sản phẩm, tìm kiếm bánh mì và thao tác với giỏ hàng.
+
+**Mục tiêu thực hiện:**
+
+- Làm quen với việc thiết kế giao diện React Native.
+- Sử dụng các thành phần `View`, `Text`, `Image`, `TextInput`, `ScrollView`, `TouchableOpacity`.
+- Tổ chức chương trình thành nhiều component riêng biệt.
+- Sử dụng `StyleSheet` để định dạng giao diện.
+- Sử dụng `useState` để quản lý dữ liệu và trạng thái.
+- Xây dựng giao diện phù hợp với nội dung Bài 02.
+
+## 4. CẤU TRÚC COMPONENT
+
+Ứng dụng được chia thành các file:
+
+```text
+MyApp_V2_BanhMiNgocBao/
+│
+├── App.js
+│
+└── components/
+    ├── Header.js
+    ├── Home.js
+    ├── ProductCard.js
+    ├── ProductList.js
+    ├── Cart.js
+    └── Footer.js
+```
+
+**Chức năng từng component:**
+
+| Component | Chức năng |
+|---|---|
+| App.js | Component chính, quản lý trạng thái và kết nối các component |
+| Header.js | Hiển thị tên và thông tin cửa hàng |
+| Home.js | Hiển thị nội dung trang chủ và khuyến mãi |
+| ProductCard.js | Hiển thị thông tin từng loại bánh mì |
+| ProductList.js | Hiển thị danh sách và tìm kiếm sản phẩm |
+| Cart.js | Hiển thị giỏ hàng, số lượng và tổng tiền |
+| Footer.js | Thanh điều hướng giữa các trang |
+
+## 5. CÁC CHỨC NĂNG CHÍNH
+
+### 5.1. Trang chủ
+
+- Hiển thị tên cửa hàng BÁNH MÌ NGỌC BẢO.
+- Hiển thị banner giới thiệu và chương trình khuyến mãi.
+- Hiển thị danh sách sản phẩm.
+- Thiết kế giao diện dễ nhìn và thuận tiện sử dụng.
+
+### 5.2. Danh sách sản phẩm
+
+- Hiển thị các loại bánh mì.
+- Mỗi sản phẩm có tên, giá và nút thêm vào giỏ hàng.
+- Sử dụng component `ProductCard` để tái sử dụng giao diện.
+
+### 5.3. Tìm kiếm sản phẩm
+
+- Nhập tên bánh mì cần tìm.
+- Lọc danh sách sản phẩm theo từ khóa.
+- Hiển thị kết quả tìm kiếm.
+
+### 5.4. Giỏ hàng
+
+- Thêm sản phẩm vào giỏ hàng.
+- Hiển thị danh sách sản phẩm đã chọn.
+- Tăng hoặc giảm số lượng.
+- Tự động cập nhật tổng tiền.
+
+### 5.5. Đặt hàng mô phỏng
+
+- Kiểm tra sản phẩm trong giỏ hàng.
+- Nhấn nút xác nhận đặt hàng.
+- Hiển thị thông báo kết quả.
+
+*Đây là chức năng mô phỏng phục vụ bài thực hành, không tích hợp thanh toán trực tuyến thực tế.*
+
+### 5.6. Điều hướng
+
+- Chuyển đổi giữa trang chủ và giỏ hàng.
+- Hiển thị số lượng sản phẩm trong giỏ hàng.
+
+## 6. GIẢI THÍCH MÃ NGUỒN
+
+### 6.1. App.js
+
+Đây là component gốc của ứng dụng.
+
+Các nhiệm vụ chính:
+
+- Import các component cần thiết.
+- Quản lý trang đang hiển thị.
+- Quản lý dữ liệu giỏ hàng.
+- Xử lý sự kiện thêm sản phẩm.
+- Xử lý tăng giảm số lượng.
+- Kết nối các component.
+
+Ví dụ sử dụng React Hook:
+
+```jsx
+const [page, setPage] = useState('home');
+const [cart, setCart] = useState([]);
+```
+
+### 6.2. Header.js
+
+Component hiển thị phần đầu của ứng dụng.
+
+Sử dụng:
+
+- `View`: Tạo vùng chứa.
+- `Text`: Hiển thị tên cửa hàng.
+- `StyleSheet`: Định dạng màu sắc và kích thước.
+
+### 6.3. Home.js
+
+Component thiết kế giao diện trang chủ, bao gồm:
+
+- Banner khuyến mãi.
+- Nội dung giới thiệu.
+- Khu vực hiển thị sản phẩm.
+
+### 6.4. ProductCard.js
+
+Component hiển thị thông tin từng sản phẩm.
+
+Sử dụng:
+
+- `View` để tạo thẻ sản phẩm.
+- `Text` để hiển thị tên và giá.
+- `TouchableOpacity` để tạo nút tương tác.
+- `borderRadius` để bo góc thẻ.
+
+### 6.5. ProductList.js
+
+Component quản lý danh sách sản phẩm.
+
+Sử dụng `TextInput` để nhập từ khóa và hàm `filter()` để tìm kiếm sản phẩm.
+
+### 6.6. Cart.js
+
+Component giỏ hàng thực hiện:
+
+- Hiển thị sản phẩm đã chọn.
+- Cập nhật số lượng.
+- Tính tổng tiền.
+- Xác nhận đặt hàng.
+
+### 6.7. Footer.js
+
+Component hiển thị thanh điều hướng, cho phép chuyển giữa trang chủ và giỏ hàng.
+
+## 7. THAY ĐỔI VÀ THIẾT KẾ GIAO DIỆN
+
+Trong quá trình thực hiện, ứng dụng sử dụng các thuộc tính định dạng React Native:
+
+| Thuộc tính | Công dụng |
+|---|---|
+| `backgroundColor` | Thay đổi màu nền |
+| `color` | Thay đổi màu chữ |
+| `fontSize` | Điều chỉnh kích thước chữ |
+| `fontWeight` | Làm đậm chữ |
+| `borderRadius` | Bo góc thành phần |
+| `padding` | Tạo khoảng cách bên trong |
+| `marginBottom` | Tạo khoảng cách phía dưới |
+| `flexDirection` | Sắp xếp thành phần theo hàng hoặc cột |
+| `justifyContent` | Căn chỉnh thành phần |
+| `alignItems` | Căn chỉnh thành phần theo trục phụ |
+| `elevation` | Tạo hiệu ứng đổ bóng trên Android |
+
+**Màu sắc chủ đạo:**
+
+- Màu cam: Làm nổi bật các nút và thông tin quan trọng.
+- Màu đen: Sử dụng cho tiêu đề và phần đầu trang.
+- Màu trắng và kem: Tạo nền sáng cho nội dung.
+
+## 8. HÌNH ẢNH MINH CHỨNG
+
+### 8.1. Giao diện trang chủ
+
+![Giao diện trang chủ](../../1-TrangChu.png)
+
+### 8.2. Chức năng tìm kiếm
+
+![Chức năng tìm kiếm](../../2-TimKiem.png)
+
+### 8.3. Giao diện giỏ hàng
+
+![Giao diện giỏ hàng](../../3-GioHang.png)
+
+### 8.4. Mã nguồn App.js
+
+![Code App.js](../../app.js.jpg)
+
+### 8.5. Mã nguồn Header.js
+
+![Code Header.js](../../Header.js.jpg)
+
+### 8.6. Mã nguồn Home.js
+
+![Code Home.js](../../Home.js.jpg)
+
+### 8.7. Mã nguồn ProductCard.js
+
+![Code ProductCard.js](../../ProducCard.js.jpg)
+
+### 8.8. Mã nguồn ProductList.js
+
+![Code ProductList.js](../../ProductList.js.jpg)
+
+### 8.9. Mã nguồn Footer.js
+
+![Code Footer.js](../../Footer.js.jpg)
+
+## 9. KẾT QUẢ ĐẠT ĐƯỢC
+
+Qua bài thực hành, sinh viên đã thực hiện:
+
+- Thiết kế ứng dụng bằng React Native.
+- Tổ chức giao diện thành nhiều component.
+- Sử dụng các thành phần cơ bản của React Native.
+- Áp dụng `StyleSheet` để thiết kế giao diện.
+- Xây dựng chức năng tìm kiếm và giỏ hàng mô phỏng.
+- Thực hành sử dụng Expo Snack và GitHub.
+
+## 10. KẾT LUẬN
+
+Bài thực hành giúp sinh viên hiểu rõ hơn cách xây dựng giao diện ứng dụng di động bằng React Native, cách chia nhỏ giao diện thành các component và cách xử lý các thao tác cơ bản của người dùng.
+
+**Sinh viên thực hiện: Đỗ Trung Ngọc Bảo**
+
+**Mã sinh viên: CD-CNTT18A05**
+
+**Lớp: CD-CNTT18A**
