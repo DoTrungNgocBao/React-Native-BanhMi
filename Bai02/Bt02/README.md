@@ -49,7 +49,7 @@ LearningApp/
 
 ## 5. Link chạy ứng dụng Expo Snack
 
-**Link Expo Snack:** CHUA_CAP_NHAT_LINK_EXPO
+**Link Expo Snack:** https://snack.expo.dev/@dotrungngocbao/productapp
 
 ## 6. Hình ảnh minh chứng
 
