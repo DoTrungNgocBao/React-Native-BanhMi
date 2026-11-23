@@ -287,25 +287,25 @@ navigation.navigate("ServiceDetailScreen", {
 
 Trang chủ hiển thị banner BookingApp, thông tin sinh viên và danh sách các dịch vụ.
 
-![Giao diện trang chủ](images/01_HomeScreen.png)
+![Giao diện trang chủ](01_HomeScreen.png)
 
 **10.2. ServiceDetailScreen – Chi tiết dịch vụ**
 
 Hiển thị hình ảnh, mô tả, thời lượng, giá và nút đặt lịch.
 
-![Giao diện chi tiết dịch vụ](images/02_ServiceDetailScreen.png)
+![Giao diện chi tiết dịch vụ](02_ServiceDetailScreen.png)
 
 **10.3. BookingScreen – Đặt lịch**
 
 Cho phép chọn ngày, khung giờ, nhập họ tên và kiểm tra thông tin đặt lịch.
 
-![Giao diện đặt lịch](images/03_BookingScreen.png)
+![Giao diện đặt lịch](03_BookingScreen.png)
 
 **10.4. ConfirmationScreen – Xác nhận**
 
 Hiển thị thông báo thành công và thông tin lịch hẹn sau khi xác nhận.
 
-![Giao diện xác nhận](images/04_ConfirmationScreen.png)
+![Giao diện xác nhận](04_ConfirmationScreen.png)
 
 ---
 
