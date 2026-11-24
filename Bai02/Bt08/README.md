@@ -69,49 +69,52 @@ TravellingApp là ứng dụng khám phá địa điểm du lịch Việt Nam, �
 
 ## 📸 Hình ảnh minh chứng
 
+## 📸 Hình ảnh minh chứng
+
 ### 1. Màn hình chào mừng
 
-<img src="IMAGES_BT08/01-Splash.png" width="320">
+<img src="01-Splash.png" width="320">
 
 ### 2. Trang chủ
 
-<img src="IMAGES_BT08/02-TrangChu.png" width="320">
+<img src="02-TrangChu.png" width="320">
 
 ### 3. Chi tiết địa điểm
 
-<img src="IMAGES_BT08/03-ChiTiet.png" width="320">
+<img src="03-ChiTiet.png" width="320">
 
 ### 4. Danh sách yêu thích
 
-<img src="IMAGES_BT08/04-YeuThich.png" width="320">
+<img src="04-YeuThich.png" width="320">
 
 ### 5. Trang cá nhân
 
-<img src="IMAGES_BT08/05-CaNhan.png" width="320">
+<img src="05-CaNhan.png" width="320">
 
 ### 6. Drawer Navigation
 
-<img src="IMAGES_BT08/06-Drawer.png" width="320">
+<img src="06-Drawer.png" width="320">
 
 ### 7. Giới thiệu
 
-<img src="IMAGES_BT08/07-GioiThieu.png" width="320">
+<img src="07-GioiThieu.png" width="320">
 
 ### 8. Cài đặt
 
-<img src="IMAGES_BT08/08-CaiDat.png" width="320">
+<img src="08-CaiDat.png" width="320">
 
 ### 9. Liên hệ
 
-<img src="IMAGES_BT08/09-LienHe.png" width="320">
+<img src="09-LienHe.png" width="320">
 
 ### 10. Lập kế hoạch du lịch
 
-<img src="IMAGES_BT08/10-KeHoach.png" width="320">
+<img src="10-KeHoach.png" width="320">
 
 ### 11. Cấu trúc Component
 
-<img src="IMAGES_BT08/11-Components.png" width="650">
+<img src="11-Components.png" width="650">
+
 
 ## 📝 Kết luận
 
